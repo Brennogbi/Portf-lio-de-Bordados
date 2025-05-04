@@ -13,30 +13,77 @@
 
   <!-- 🌸 Navbar -->
   <header class="navbar">
-    <div class="logo"><a href="index.htm">Bordados da Marias</a></div>
+    <div class="logo"><a href="index.htm">Bordado tr da Marias</a></div>
     <button class="menu-toggle" id="menuToggle">&#9776;</button>
     <nav>
       <ul>
-        <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#loja">Loja</a></li>
+        <li><a href="#portfolio">Categoria</a></li>
+        <li><a href="loja%20pagina/loja.html">Loja</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- ✨ Hero -->
-  <section class="hero">
-    <div class="hero-content">
-      <img src="img/ffffff.png" alt="Logo Bordados da Marias" class="hero-logo">
-      <p>Peças únicas, bordadas com amor e delicadeza.</p>
+ <!-- ✨ Hero com Carrossel de Grupos de Imagens -->
+<section class="hero p-0">
+  <div id="carouselHero" class="carousel slide w-100" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-multi-imgs">
+          
+          <img src="img/logo.png" class="hero-carousel-img" alt="Deserto">
+          
+        </div>
+      </div>
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-multi-imgs">
+          <img src="img/sereiia.jpg" class="hero-carousel-img" alt="Sereia">
+          <img src="img/deserto bastidor.jpg" class="hero-carousel-img" alt="Deserto">
+          <img src="img/bordado de mesa.jpg" class="hero-carousel-img" alt="Bordado de mesa">
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-multi-imgs">
+          <img src="img/outros.jpg" class="hero-carousel-img" alt="Exemplo 4">
+          <img src="img/filto dos sonhos bastidor.jpg" class="hero-carousel-img" alt="Exemplo 5">
+          <img src="img/vovo.jpg" class="hero-carousel-img" alt="Exemplo 6">
+        </div>
+      </div>
+
     </div>
-  </section>
+
+    <!-- Botões de controle -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+
+  <!-- Texto sobreposto -->
+  <div class="hero-carousel-text">
+    <p>Peças únicas, bordadas com amor e delicadeza.</p>
+  </div>
+</section>
+
+
+
+
+
 
   <!-- 🎨 Portfólio -->
   <section id="portfolio" class="portfolio">
-    <h2 class="text-center mb-4">Portfólio</h2>
-    <p>Nas galerias abaixo você pode ver alguns trabalhos já feitos por mim. Para abrir a página, é só clicar na imagem.</p>
+    <h2 class="text-center mb-4">categoria</h2>
+    
     <div class="portfolio-gallery">
       <a href="acessorios.html" class="portfolio-card">
         <img src="img/deserto bastidor.jpg" alt="Acessórios bordados">
@@ -59,33 +106,15 @@
 
   <!-- 🛍️ Loja -->
   <section id="loja" class="loja">
-    <h2>Loja <span id="cart-count" class="badge bg-pink">Carrinho: 0</span></h2>
-    <div class="loja-grid">
-      <div class="produto" data-name="Produto 1" data-price="100" data-desc="Bordado feito à mão, com linhas premium." data-img="img/vovo.jpg">
-        <img src="img/vovo.jpg" alt="Produto 1">
-        <h3>Produto 1</h3>
-        <p>R$ 100,00</p>
-        <button class="btn-comprar">Comprar</button>
-      </div>
-      <div class="produto" data-name="Produto 1" data-price="100" data-desc="Bordado feito à mão, com linhas premium." data-img="img/vovo.jpg">
-        <img src="img/vovo.jpg" alt="Produto 1">
-        <h3>Produto 1</h3>
-        <p>R$ 100,00</p>
-        <button class="btn-comprar">Comprar</button>
-      </div>
-      
-      
-      
-      
+    <div class="loja-header">
+      <img src="img/bordado.png" alt="Logo" class="logo-central">
+      <p class="texto-destaque">Precisa de um bordado para uma data próxima?</p>
+      <p><a href="#prontos" class="link-loja">Clique aqui</a> para ver peças prontas para o envio!</p>
     </div>
   </section>
+  
 
-  <!-- 🛒 Carrinho -->
-  <section class="carrinho-container">
-    <h2>Carrinho</h2>
-    <ul id="carrinho"></ul>
-    <p>Total: R$ <span id="total">0.00</span></p>
-  </section>
+  
 
   <!-- 🪡 Modal Produto -->
   <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
