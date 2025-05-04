@@ -221,13 +221,13 @@ body {
 
 /* Loja */
 .loja {
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   background-color: #f0f0f0;
   color: #1a1a1a;
 }
 .loja-grid {
   display: grid;
-  grid-template-columns: 200px 200px 200px;
+  grid-template-columns: 200px 200px  200px;
   justify-content: center;
   gap: 2rem;
 }

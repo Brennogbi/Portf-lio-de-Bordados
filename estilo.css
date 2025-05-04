@@ -69,12 +69,12 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 5rem;
+  padding: 6rem;
 }
 
 .galeria img {
-  width: 250px;
+  width: 150px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.829);
