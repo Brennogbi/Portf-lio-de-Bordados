@@ -62,10 +62,14 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(el);
   });
 
-  // Menu Toggle
+  // Menu Toggle - Atualizado para ocupar a tela toda
   const menuToggle = document.getElementById('menuToggle');
   const navMenu = document.querySelector('.navbar ul');
+
   menuToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
+
+    // Alterna uma classe no body ou html para bloquear scroll se desejar
+    document.body.classList.toggle('menu-open');
   });
 });
