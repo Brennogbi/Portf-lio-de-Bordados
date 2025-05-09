@@ -285,7 +285,7 @@ i:hover {
 
   .loja-grid {
     grid-template-columns:  1fr;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 
   .produto {
